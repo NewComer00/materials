@@ -1,0 +1,5781 @@
+﻿name: New Project
+comment: ""
+output_dir: Vocal
+cache_dir: UCache
+ustx_version: "0.6"
+resolution: 480
+bpm: 120
+beat_per_bar: 4
+beat_unit: 4
+expressions:
+  dyn:
+    name: dynamics (curve)
+    abbr: dyn
+    type: Curve
+    min: -240
+    max: 120
+    default_value: 0
+    is_flag: false
+    flag: ""
+  pitd:
+    name: pitch deviation (curve)
+    abbr: pitd
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  clr:
+    name: voice color
+    abbr: clr
+    type: Options
+    min: 0
+    max: -1
+    default_value: 0
+    is_flag: false
+    options: []
+  eng:
+    name: resampler engine
+    abbr: eng
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: false
+    options:
+    - ""
+    - worldline
+  vel:
+    name: velocity
+    abbr: vel
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  vol:
+    name: volume
+    abbr: vol
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  atk:
+    name: attack
+    abbr: atk
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  dec:
+    name: decay
+    abbr: dec
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  gen:
+    name: gender
+    abbr: gen
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: g
+  genc:
+    name: gender (curve)
+    abbr: genc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  bre:
+    name: breath
+    abbr: bre
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: B
+  brec:
+    name: breathiness (curve)
+    abbr: brec
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  lpf:
+    name: lowpass
+    abbr: lpf
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: H
+  mod:
+    name: modulation
+    abbr: mod
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  alt:
+    name: alternate
+    abbr: alt
+    type: Numerical
+    min: 0
+    max: 16
+    default_value: 0
+    is_flag: false
+    flag: ""
+  shft:
+    name: tone shift
+    abbr: shft
+    type: Numerical
+    min: -36
+    max: 36
+    default_value: 0
+    is_flag: false
+    flag: ""
+  shfc:
+    name: tone shift (curve)
+    abbr: shfc
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  tenc:
+    name: tension (curve)
+    abbr: tenc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  voic:
+    name: voicing (curve)
+    abbr: voic
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 100
+    is_flag: false
+    flag: ""
+exp_selectors:
+- dyn
+- pitd
+- clr
+- eng
+- vel
+exp_primary: 0
+exp_secondary: 1
+key: 0
+time_signatures:
+- bar_position: 0
+  beat_per_bar: 4
+  beat_unit: 4
+tempos:
+- position: 0
+  bpm: 120
+tracks:
+- singer: Ashera_DiffSinger_v100
+  phonemizer: OpenUtau.Plugin.Builtin.EnunuOnnxPhonemizer
+  renderer_settings:
+    renderer: DIFFSINGER
+  track_name: Track1
+  track_color: Blue
+  mute: false
+  solo: false
+  volume: 0
+  pan: 0
+  voice_color_names:
+  - '01: standard'
+  - '02: storm'
+voice_parts:
+- name: New Part
+  comment: ""
+  track_no: 0
+  position: 0
+  notes:
+  - position: 23040
+    duration: 600
+    tone: 62
+    lyric: Ве
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 29.166666, y: 2.4242425, shape: io}
+      - {x: 238.54167, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 60.833332, period: 165, depth: 25, in: 47.94872, out: 21.282051, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 24000
+    duration: 480
+    tone: 62
+    lyric: чер
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 125
+  - position: 24480
+    duration: 600
+    tone: 65
+    lyric: ти
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40.625, y: 5.909091, shape: io}
+      - {x: 87.5, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 156
+    - index: 1
+      offset: 84
+  - position: 25440
+    duration: 480
+    tone: 62
+    lyric: хой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 25920
+    duration: 1140
+    tone: 67
+    lyric: пе
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 58.333332, out: 17.467949, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 27360
+    duration: 720
+    tone: 62
+    lyric: сне
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -45
+    - index: 0
+      offset: -40
+  - position: 28320
+    duration: 480
+    tone: 64
+    lyric: ю
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 102
+  - position: 28800
+    duration: 959
+    tone: 65
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 29760
+    duration: 479
+    tone: 64
+    lyric: дре
+    pitch:
+      data:
+      - {x: -54.166668, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 30240
+    duration: 959
+    tone: 69
+    lyric: кой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 31200
+    duration: 60
+    tone: 67
+    lyric: п
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 31260
+    duration: 420
+    tone: 67
+    lyric: лы
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 18
+  - position: 31680
+    duration: 1680
+    tone: 62
+    lyric: вё
+    pitch:
+      data:
+      - {x: -40, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 146
+    - index: 1
+      offset: 51
+  - position: 33360
+    duration: 120
+    tone: 62
+    lyric: т
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 34560
+    duration: 959
+    tone: 62
+    lyric: Даль
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 12.121201, in: 22.676117, out: 69.78423, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -162
+  - position: 35520
+    duration: 479
+    tone: 69
+    lyric: ни
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -60
+    - index: 1
+      offset: -2
+  - position: 36000
+    duration: 959
+    tone: 69
+    lyric: ми
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 36960
+    duration: 479
+    tone: 65
+    lyric: зар
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -125
+  - position: 37440
+    duration: 1440
+    tone: 67
+    lyric: ни
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 69.337616, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 153
+    - index: 1
+      offset: 17
+  - position: 38880
+    duration: 660
+    tone: 62
+    lyric: ца
+    pitch:
+      data:
+      - {x: -169.79166, y: 50, shape: io}
+      - {x: 15.625, y: 1.5151515, shape: io}
+      - {x: 198.95833, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 137.5, depth: 34.848404, in: 50.582756, out: 0, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 299
+  - position: 39840
+    duration: 479
+    tone: 64
+    lyric: ми
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 40320
+    duration: 480
+    tone: 65
+    lyric: све
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 40800
+    duration: 479
+    tone: 64
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 41280
+    duration: 479
+    tone: 65
+    lyric: ти
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 41760
+    duration: 959
+    tone: 69
+    lyric: тся
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 83.941605, period: 165, depth: 28.787994, in: 47.57764, out: 14.037267, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 42720
+    duration: 480
+    tone: 67
+    lyric: за
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 43200
+    duration: 1439
+    tone: 65
+    lyric: вод
+    pitch:
+      data:
+      - {x: -236.45833, y: 20, shape: io}
+      - {x: 40.000004, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 73.73176, period: 165, depth: 12.121201, in: 30.366493, out: 43.455498, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 67
+    - index: 1
+      offset: 43
+    - index: 2
+      offset: 54
+  - position: 46080
+    duration: 959
+    tone: 72
+    lyric: Где
+    pitch:
+      data:
+      - {x: -80.208336, y: 0, shape: i}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 155.57454, depth: 13.636398, in: 54.921246, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 85
+    - index: 0
+      offset: 111
+      overlap_delta: 27.083334
+    - index: 1
+      offset: 8
+  - position: 47040
+    duration: 479
+    tone: 72
+    lyric: то
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 47520
+    duration: 480
+    tone: 72
+    lyric: по
+    pitch:
+      data:
+      - {x: -39.999996, y: 0, shape: io}
+      - {x: 12.5, y: 6.6666665, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: o
+  - position: 48000
+    duration: 480
+    tone: 70
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 48480
+    duration: 479
+    tone: 69
+    lyric: езд
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 68
+    - index: 3
+      offset: -19
+  - position: 48960
+    duration: 1200
+    tone: 67
+    lyric: ка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 65.89529, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 196
+  - position: 50400
+    duration: 660
+    tone: 62
+    lyric: ти
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 51360
+    duration: 479
+    tone: 64
+    lyric: тся
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 51840
+    duration: 480
+    tone: 65
+    lyric: то
+    pitch:
+      data:
+      - {x: -97.916664, y: 0, shape: io}
+      - {x: -55.208332, y: 9.848485, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: o
+    - index: 0
+      offset: 110
+  - position: 52320
+    duration: 480
+    tone: 64
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 13.636398, in: 25, out: 62.5, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 52800
+    duration: 60
+    tone: 65
+    lyric: ч
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -85
+  - position: 52860
+    duration: 420
+    tone: 65
+    lyric: ка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      phoneme: g
+      offset: -37
+    - index: 1
+      offset: 6
+  - position: 53280
+    duration: 480
+    tone: 67
+    lyric: ми
+    pitch:
+      data:
+      - {x: -256.25, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -149
+  - position: 53760
+    duration: 480
+    tone: 65
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 54240
+    duration: 480
+    tone: 67
+    lyric: ог
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: g
+    - index: 0
+      phoneme: a
+  - position: 54720
+    duration: 1440
+    tone: 69
+    lyric: ня
+    pitch:
+      data:
+      - {x: -220.83333, y: -20, shape: io}
+      - {x: -48.958332, y: -20.151516, shape: io}
+      - {x: 20.833334, y: 1.060606, shape: io}
+      - {x: 398.95834, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 77.18391, period: 219.83397, depth: 37.8788, in: 67.9698, out: 25, shift: 41.41791, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 1
+  - position: 57600
+    duration: 959
+    tone: 65
+    lyric: Где
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -114
+  - position: 58560
+    duration: 479
+    tone: 65
+    lyric: то
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 59040
+    duration: 480
+    tone: 65
+    lyric: по
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: o
+  - position: 59520
+    duration: 479
+    tone: 67
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 60000
+    duration: 60
+    tone: 69
+    lyric: д
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 42.708332, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -51
+  - position: 60060
+    duration: 419
+    tone: 69
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 51
+    - index: 0
+      offset: 1
+  - position: 60480
+    duration: 1200
+    tone: 72
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 170.3125, depth: 30.303192, in: 75.25642, out: 13.9743595, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 230
+  - position: 61920
+    duration: 720
+    tone: 70
+    lyric: ну
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 7.5756073, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 185
+  - position: 62880
+    duration: 30
+    tone: 69
+    lyric: ш
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -53
+  - position: 62910
+    duration: 449
+    tone: 69
+    lyric: кой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -17
+      overlap_delta: 5.2083335
+    - index: 1
+      offset: 14
+      overlap_delta: 3.125
+    - index: 2
+      offset: -105
+  - position: 63360
+    duration: 959
+    tone: 67
+    lyric: пар
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 13.636398, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 93
+    - index: 2
+      offset: -102
+  - position: 64320
+    duration: 479
+    tone: 64
+    lyric: ни
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -32
+  - position: 64800
+    duration: 959
+    tone: 69
+    lyric: ждут
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.2732, period: 159.69681, depth: 16.666794, in: 43.09252, out: 32.31939, shift: 12.84404, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 77
+    - index: 0
+      offset: -35
+    - index: 1
+      offset: -19
+    - index: 3
+      offset: 63
+  - position: 65760
+    duration: 480
+    tone: 67
+    lyric: ме
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 76
+  - position: 66240
+    duration: 1440
+    tone: 62
+    lyric: ня
+    pitch:
+      data:
+      - {x: -182.29167, y: 50, shape: io}
+      - {x: 80.208336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 84.65278, period: 210.41667, depth: 15.151596, in: 74.89745, out: 10.0082035, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -9
+  - position: 69120
+    duration: 960
+    tone: 62
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -164
+  - position: 70080
+    duration: 479
+    tone: 74
+    lyric: ря
+    pitch:
+      data:
+      - {x: -96.875, y: -120, shape: io}
+      - {x: 114.583336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 70560
+    duration: 479
+    tone: 74
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 71040
+    duration: 479
+    tone: 72
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 71520
+    duration: 480
+    tone: 74
+    lyric: ку
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 72000
+    duration: 60
+    tone: 72
+    lyric: д
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 16.666666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -275
+  - position: 72060
+    duration: 1380
+    tone: 72
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 78.26087, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -132
+    - index: 1
+      offset: -36
+  - position: 73440
+    duration: 959
+    tone: 70
+    lyric: ва
+    pitch:
+      data:
+      - {x: -345.83334, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 74400
+    duration: 479
+    tone: 70
+    lyric: я
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 74880
+    duration: 960
+    tone: 70
+    lyric: бе
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 75840
+    duration: 480
+    tone: 72
+    lyric: лы
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 76320
+    duration: 480
+    tone: 74
+    lyric: е
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 76800
+    duration: 479
+    tone: 72
+    lyric: +~
+    pitch:
+      data:
+      - {x: -83.333336, y: 20, shape: io}
+      - {x: 84.375, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 77280
+    duration: 480
+    tone: 70
+    lyric: цве
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 51
+    - index: 1
+      offset: -19
+  - position: 77760
+    duration: 1680
+    tone: 69
+    lyric: ты
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 65.625, y: -0.15151516, shape: io}
+      - {x: 497.91666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 79.93056, period: 228.54607, depth: 33.333206, in: 49.733345, out: 0, shift: 31.645569, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 69
+  - position: 80640
+    duration: 959
+    tone: 65
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.48175, period: 165, depth: 20, in: 40.16228, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -239
+  - position: 81600
+    duration: 479
+    tone: 65
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 30
+  - position: 82080
+    duration: 480
+    tone: 65
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 82560
+    duration: 480
+    tone: 67
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 83040
+    duration: 480
+    tone: 69
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 83520
+    duration: 1440
+    tone: 72
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 87.708336, period: 165, depth: 34.090805, in: 55.898655, out: 38.558987, shift: 70.25317, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 84960
+    duration: 959
+    tone: 70
+    lyric: ну
+    pitch:
+      data:
+      - {x: -292.70834, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 29.545593, in: 59.73395, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 85920
+    duration: 479
+    tone: 69
+    lyric: шка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -2
+    - index: 0
+      offset: -117
+    - index: 1
+      offset: -84
+  - position: 86400
+    duration: 960
+    tone: 67
+    lyric: что
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 86.770836, period: 165, depth: 33.333206, in: 20.768305, out: 65.306114, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -77
+    - index: 0
+      offset: -19
+  - position: 87360
+    duration: 15
+    tone: 64
+    lyric: в
+    pitch:
+      data:
+      - {x: -514.5833, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -343
+  - position: 87375
+    duration: 15
+    tone: 64
+    lyric: з
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -296
+  - position: 87390
+    duration: 405
+    tone: 64
+    lyric: гру
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -24
+    - index: 0
+      offset: -230
+    - index: 1
+      offset: -136
+  - position: 87795
+    duration: 15
+    tone: 64
+    lyric: с
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -175
+  - position: 87810
+    duration: 15
+    tone: 64
+    lyric: т
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -125
+  - position: 87840
+    duration: 960
+    tone: 69
+    lyric: ну
+    pitch:
+      data:
+      - {x: -11.458333, y: 0, shape: i}
+      - {x: 40, y: 0, shape: io}
+      snap_first: false
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 228
+    - index: 1
+      offset: 10
+  - position: 88800
+    duration: 480
+    tone: 67
+    lyric: ла
+    pitch:
+      data:
+      - {x: -226.04167, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 89280
+    duration: 1680
+    tone: 62
+    lyric: ты
+    pitch:
+      data:
+      - {x: -108.333336, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 85.416664, period: 234.375, depth: 27.272797, in: 49.686413, out: 0, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 117
+  - position: 95040
+    duration: 960
+    tone: 62
+    lyric: Лишь
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 35.416668, y: 0.6060606, shape: io}
+      - {x: 238.54167, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 86.458336, period: 165, depth: 19.696999, in: 47.94872, out: 21.282051, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 208
+    - index: 0
+      offset: 121
+  - position: 96000
+    duration: 480
+    tone: 62
+    lyric: гуд
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 89
+    - index: 0
+      offset: 80
+  - position: 96480
+    duration: 720
+    tone: 65
+    lyric: ки
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 87.5, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 73
+    - index: 1
+      offset: 84
+  - position: 97440
+    duration: 480
+    tone: 62
+    lyric: пе
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 97920
+    duration: 960
+    tone: 67
+    lyric: ву
+    pitch:
+      data:
+      - {x: -105.208336, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.89474, period: 165, depth: 21.212006, in: 68.081955, out: 6.7857137, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 99360
+    duration: 720
+    tone: 62
+    lyric: чи
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 100320
+    duration: 480
+    tone: 64
+    lyric: е
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 102
+  - position: 100800
+    duration: 960
+    tone: 65
+    lyric: смол
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 3
+      offset: -137
+  - position: 101760
+    duration: 479
+    tone: 64
+    lyric: кнут
+    pitch:
+      data:
+      - {x: -54.166668, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 3
+      offset: -67
+    - index: 1
+      offset: 38
+    - index: 0
+      offset: 92
+  - position: 102240
+    duration: 959
+    tone: 69
+    lyric: над
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 30
+    - index: 2
+      offset: 55
+  - position: 103200
+    duration: 480
+    tone: 67
+    lyric: во
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 111
+    - index: 1
+      phoneme: a
+  - position: 103680
+    duration: 1680
+    tone: 62
+    lyric: дой
+    pitch:
+      data:
+      - {x: -40, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 76.13095, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 13
+    - index: 1
+      offset: 18
+    - index: 2
+      offset: -238
+  - position: 106560
+    duration: 960
+    tone: 62
+    lyric: Я
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 74.76538, period: 165, depth: 28.787804, in: 64.85355, out: 0, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -162
+  - position: 107520
+    duration: 479
+    tone: 69
+    lyric: и
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 103.125, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -60
+    - index: 1
+      offset: -2
+  - position: 108000
+    duration: 959
+    tone: 69
+    lyric: ду
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 108960
+    duration: 479
+    tone: 65
+    lyric: кря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -113
+    - index: 1
+      offset: -72
+    - index: 2
+      offset: 25
+  - position: 109440
+    duration: 1440
+    tone: 67
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 76.111115, period: 165, depth: 31.060791, in: 46.259125, out: 36.538464, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 153
+    - index: 1
+      offset: 17
+  - position: 110880
+    duration: 720
+    tone: 62
+    lyric: ну
+    pitch:
+      data:
+      - {x: -190.625, y: 50, shape: io}
+      - {x: 35.41667, y: 1.0606062, shape: io}
+      - {x: 198.95833, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 152.08333, depth: 28.030396, in: 42.307697, out: 5.7692313, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -48
+  - position: 111840
+    duration: 60
+    tone: 64
+    lyric: ш
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -94
+  - position: 111900
+    duration: 419
+    tone: 64
+    lyric: ке
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -28
+  - position: 112320
+    duration: 480
+    tone: 65
+    lyric: троп
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 18
+    - index: 1
+      offset: -83
+    - index: 3
+      offset: 91
+  - position: 112800
+    duration: 479
+    tone: 64
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 113280
+    duration: 480
+    tone: 65
+    lyric: ко
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 113760
+    duration: 959
+    tone: 69
+    lyric: ю
+    pitch:
+      data:
+      - {x: -90.625, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 83.941605, period: 165, depth: 28.787994, in: 47.57764, out: 14.037267, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 27
+  - position: 114720
+    duration: 480
+    tone: 67
+    lyric: кру
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 115200
+    duration: 1439
+    tone: 65
+    lyric: той
+    pitch:
+      data:
+      - {x: -236.45833, y: 20, shape: io}
+      - {x: 40.000004, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 73.73176, period: 165, depth: 12.121201, in: 30.366493, out: 43.455498, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 67
+    - index: 1
+      offset: 43
+    - index: 2
+      offset: 6
+  - position: 118080
+    duration: 959
+    tone: 72
+    lyric: Тре
+    pitch:
+      data:
+      - {x: -80.208336, y: 0, shape: i}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 155.57454, depth: 13.636398, in: 54.921246, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 85
+    - index: 0
+      offset: 111
+      overlap_delta: 27.083334
+    - index: 1
+      offset: 8
+  - position: 119040
+    duration: 30
+    tone: 72
+    lyric: п
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      phoneme: b
+      offset: -139
+      preutter_delta: 11.458333
+      overlap_delta: 53.125
+  - position: 119070
+    duration: 449
+    tone: 72
+    lyric: лет
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -45
+    - index: 1
+      offset: -3
+    - index: 2
+      offset: 3
+  - position: 119520
+    duration: 480
+    tone: 72
+    lyric: под
+    pitch:
+      data:
+      - {x: -39.999996, y: 0, shape: io}
+      - {x: 12.5, y: 6.6666665, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: o
+    - index: 0
+      offset: 164
+    - index: 2
+      offset: 275
+  - position: 120000
+    duration: 480
+    tone: 70
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 120480
+    duration: 479
+    tone: 69
+    lyric: куд
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      phoneme: d
+      offset: -140
+      overlap_delta: 37.5
+    - index: 3
+      offset: -19
+    - index: 0
+      offset: 125
+  - position: 120960
+    duration: 1440
+    tone: 67
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 80.97222, period: 165, depth: 20, in: 29.073757, out: 50.51458, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 208
+  - position: 122400
+    duration: 660
+    tone: 62
+    lyric: во
+    pitch:
+      data:
+      - {x: -135.41667, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 160.41667, depth: 20, in: 53.613056, out: 9.09091, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 135
+    - index: 0
+      offset: 191
+  - position: 123360
+    duration: 479
+    tone: 64
+    lyric: ю
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 123840
+    duration: 480
+    tone: 65
+    lyric: ве
+    pitch:
+      data:
+      - {x: -97.916664, y: 0, shape: io}
+      - {x: -55.208332, y: 9.848485, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: e
+    - index: 0
+      offset: 110
+  - position: 124320
+    duration: 480
+    tone: 64
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 13.636398, in: 25, out: 62.5, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 124800
+    duration: 420
+    tone: 65
+    lyric: те
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 125220
+    duration: 60
+    tone: 65
+    lyric: р
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 19.791666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -151
+  - position: 125280
+    duration: 480
+    tone: 67
+    lyric: без
+    pitch:
+      data:
+      - {x: -41.666668, y: -20, shape: io}
+      - {x: -3.125, y: 8.030303, shape: io}
+      - {x: 61.458332, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -67
+    - index: 2
+      offset: 168
+  - position: 125760
+    duration: 480
+    tone: 65
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 126240
+    duration: 480
+    tone: 67
+    lyric: кон
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: a
+      offset: 5
+    - index: 0
+      phoneme: g
+      offset: 48
+  - position: 126720
+    duration: 1440
+    tone: 69
+    lyric: ца
+    pitch:
+      data:
+      - {x: -220.83333, y: -20, shape: io}
+      - {x: -48.958332, y: -20.151516, shape: io}
+      - {x: 20.833334, y: 1.060606, shape: io}
+      - {x: 398.95834, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 77.18391, period: 239.71895, depth: 33.333206, in: 46.645924, out: 43.63676, shift: 41.41791, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 1
+  - position: 129600
+    duration: 959
+    tone: 65
+    lyric: Спра
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -171
+    - index: 0
+      offset: -235
+    - index: 2
+      offset: -69
+  - position: 130560
+    duration: 479
+    tone: 65
+    lyric: ва
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 131040
+    duration: 480
+    tone: 65
+    lyric: ку
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: o
+  - position: 131520
+    duration: 479
+    tone: 67
+    lyric: +~
+    pitch:
+      data:
+      - {x: -116.666664, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 132000
+    duration: 479
+    tone: 69
+    lyric: дри
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -38
+    - index: 0
+      offset: -27
+  - position: 132480
+    duration: 1200
+    tone: 72
+    lyric: то
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 170.3125, depth: 30.303192, in: 75.25642, out: 13.9743595, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 141
+    - index: 1
+      phoneme: o
+  - position: 133920
+    duration: 720
+    tone: 70
+    lyric: ка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 7.5756073, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 185
+  - position: 134880
+    duration: 479
+    tone: 69
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -17
+      overlap_delta: 5.2083335
+    - index: 1
+      offset: 14
+      overlap_delta: 3.125
+    - index: 2
+      offset: -105
+  - position: 135360
+    duration: 959
+    tone: 67
+    lyric: сле
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 13.636398, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 24
+    - index: 2
+      offset: 1
+    - index: 1
+      offset: -39
+  - position: 136320
+    duration: 479
+    tone: 64
+    lyric: ва
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 23
+  - position: 136800
+    duration: 959
+    tone: 69
+    lyric: куз
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.2732, period: 159.69681, depth: 16.666794, in: 43.09252, out: 32.31939, shift: 12.84404, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 77
+    - index: 0
+      offset: -35
+    - index: 1
+      offset: -19
+    - index: 3
+      offset: 63
+  - position: 137760
+    duration: 480
+    tone: 67
+    lyric: не
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 76
+  - position: 138240
+    duration: 1440
+    tone: 62
+    lyric: ца
+    pitch:
+      data:
+      - {x: -182.29167, y: 50, shape: io}
+      - {x: 80.208336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 84.65278, period: 210.41667, depth: 40.151596, in: 74.89745, out: 10.0082035, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 153
+  - position: 141120
+    duration: 960
+    tone: 62
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -164
+  - position: 142080
+    duration: 479
+    tone: 74
+    lyric: ря
+    pitch:
+      data:
+      - {x: -96.875, y: -120, shape: io}
+      - {x: 114.583336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 142560
+    duration: 479
+    tone: 74
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 143040
+    duration: 479
+    tone: 72
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 143520
+    duration: 480
+    tone: 74
+    lyric: ку
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 144000
+    duration: 60
+    tone: 72
+    lyric: д
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 16.666666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -275
+  - position: 144060
+    duration: 1380
+    tone: 72
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 78.26087, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -132
+    - index: 1
+      offset: -36
+  - position: 145440
+    duration: 959
+    tone: 70
+    lyric: ва
+    pitch:
+      data:
+      - {x: -345.83334, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 146400
+    duration: 479
+    tone: 70
+    lyric: я
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 146880
+    duration: 960
+    tone: 70
+    lyric: бе
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 147840
+    duration: 480
+    tone: 72
+    lyric: лы
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 148320
+    duration: 480
+    tone: 74
+    lyric: е
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 148800
+    duration: 479
+    tone: 72
+    lyric: +~
+    pitch:
+      data:
+      - {x: -83.333336, y: 20, shape: io}
+      - {x: 84.375, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 149280
+    duration: 480
+    tone: 70
+    lyric: цве
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 51
+    - index: 1
+      offset: -19
+  - position: 149760
+    duration: 1680
+    tone: 69
+    lyric: ты
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 65.625, y: -0.15151516, shape: io}
+      - {x: 497.91666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 79.93056, period: 228.54607, depth: 33.333206, in: 49.733345, out: 0, shift: 31.645569, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 69
+  - position: 152640
+    duration: 959
+    tone: 65
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.48175, period: 165, depth: 20, in: 40.16228, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -239
+  - position: 153600
+    duration: 479
+    tone: 65
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 30
+  - position: 154080
+    duration: 480
+    tone: 65
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 154560
+    duration: 480
+    tone: 67
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 155040
+    duration: 480
+    tone: 69
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 155520
+    duration: 1440
+    tone: 72
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 87.708336, period: 165, depth: 34.090805, in: 55.898655, out: 38.558987, shift: 70.25317, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 156960
+    duration: 959
+    tone: 70
+    lyric: ну
+    pitch:
+      data:
+      - {x: -292.70834, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 29.545593, in: 59.73395, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 157920
+    duration: 479
+    tone: 69
+    lyric: шка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -2
+    - index: 0
+      offset: -117
+    - index: 1
+      offset: -84
+  - position: 158400
+    duration: 960
+    tone: 67
+    lyric: что
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 86.770836, period: 165, depth: 33.333206, in: 20.768305, out: 65.306114, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -77
+    - index: 0
+      offset: -19
+  - position: 159360
+    duration: 15
+    tone: 64
+    lyric: в
+    pitch:
+      data:
+      - {x: -514.5833, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -343
+  - position: 159375
+    duration: 15
+    tone: 64
+    lyric: з
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -296
+  - position: 159390
+    duration: 405
+    tone: 64
+    lyric: гру
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -24
+    - index: 0
+      offset: -230
+    - index: 1
+      offset: -136
+  - position: 159795
+    duration: 15
+    tone: 64
+    lyric: с
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -175
+  - position: 159810
+    duration: 15
+    tone: 64
+    lyric: т
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -125
+  - position: 159840
+    duration: 960
+    tone: 69
+    lyric: ну
+    pitch:
+      data:
+      - {x: -11.458333, y: 0, shape: i}
+      - {x: 40, y: 0, shape: io}
+      snap_first: false
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 228
+    - index: 1
+      offset: 10
+  - position: 160800
+    duration: 480
+    tone: 67
+    lyric: ла
+    pitch:
+      data:
+      - {x: -226.04167, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 161280
+    duration: 1680
+    tone: 62
+    lyric: ты
+    pitch:
+      data:
+      - {x: -108.333336, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 85.416664, period: 234.375, depth: 27.272797, in: 49.686413, out: 0, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 117
+  - position: 167040
+    duration: 960
+    tone: 62
+    lyric: Днём
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 35.416668, y: 0.6060606, shape: io}
+      - {x: 238.54167, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 86.458336, period: 165, depth: 19.696999, in: 47.94872, out: 21.282051, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 36
+    - index: 0
+      offset: 112
+    - index: 1
+      offset: -68
+  - position: 168000
+    duration: 480
+    tone: 62
+    lyric: вце
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 89
+    - index: 0
+      offset: 80
+  - position: 168480
+    duration: 600
+    tone: 65
+    lyric: ху
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 87.5, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 73
+    - index: 1
+      offset: 84
+  - position: 169440
+    duration: 480
+    tone: 62
+    lyric: ко
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 169920
+    duration: 1320
+    tone: 67
+    lyric: рот
+    pitch:
+      data:
+      - {x: -105.208336, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.89474, period: 165, depth: 21.212006, in: 68.081955, out: 6.7857137, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -57
+    - index: 2
+      offset: 92
+  - position: 171360
+    duration: 720
+    tone: 62
+    lyric: ки
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 172320
+    duration: 480
+    tone: 64
+    lyric: е
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 102
+  - position: 172800
+    duration: 960
+    tone: 65
+    lyric: встре
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 3
+      offset: -41
+    - index: 2
+      offset: -28
+  - position: 173760
+    duration: 479
+    tone: 64
+    lyric: чи
+    pitch:
+      data:
+      - {x: -54.166668, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 3
+      offset: -67
+    - index: 1
+      offset: 38
+    - index: 0
+      offset: 92
+  - position: 174240
+    duration: 959
+    tone: 69
+    lyric: го
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 41.666794, in: 75.133354, out: 0.6416941, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 30
+    - index: 2
+      offset: 55
+    - index: 1
+      phoneme: a
+  - position: 175200
+    duration: 480
+    tone: 67
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 111
+    - index: 1
+      phoneme: a
+  - position: 175680
+    duration: 1680
+    tone: 62
+    lyric: чи
+    pitch:
+      data:
+      - {x: -279.16666, y: 50, shape: io}
+      - {x: 39.999996, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 76.13095, period: 165, depth: 31.0606, in: 53.08835, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 13
+    - index: 1
+      offset: 18
+    - index: 2
+      offset: -238
+  - position: 178560
+    duration: 960
+    tone: 62
+    lyric: А
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 74.76538, period: 165, depth: 28.787804, in: 64.85355, out: 0, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -162
+  - position: 179520
+    duration: 479
+    tone: 69
+    lyric: сой
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 103.125, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 267
+    - index: 1
+      phoneme: a
+      offset: -21
+    - index: 2
+      offset: -206
+  - position: 180000
+    duration: 959
+    tone: 69
+    lyric: дем
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: o
+    - index: 2
+      offset: -196
+  - position: 180960
+    duration: 479
+    tone: 65
+    lyric: ся
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -85
+    - index: 1
+      offset: -7
+    - index: 2
+      offset: 25
+  - position: 181440
+    duration: 1440
+    tone: 67
+    lyric: ве
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 76.111115, period: 165, depth: 31.060791, in: 46.259125, out: 36.538464, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 111
+    - index: 1
+      offset: 17
+  - position: 182880
+    duration: 720
+    tone: 62
+    lyric: че
+    pitch:
+      data:
+      - {x: -400, y: 50, shape: io}
+      - {x: 35.41667, y: 1.0606062, shape: io}
+      - {x: 198.95833, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 152.08333, depth: 42.424202, in: 42.307697, out: 5.7692313, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 36
+    - index: 1
+      phoneme: e
+  - position: 183840
+    duration: 479
+    tone: 64
+    lyric: ром
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -28
+    - index: 2
+      offset: -85
+  - position: 184320
+    duration: 480
+    tone: 65
+    lyric: ся
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 18
+    - index: 1
+      offset: 12
+    - index: 3
+      offset: 91
+  - position: 184800
+    duration: 479
+    tone: 64
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 185280
+    duration: 480
+    tone: 65
+    lyric: де
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      phoneme: dj
+      offset: 69
+    - index: 1
+      phoneme: e
+  - position: 185760
+    duration: 959
+    tone: 69
+    lyric: ми
+    pitch:
+      data:
+      - {x: -201.04167, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 83.941605, period: 165, depth: 28.787994, in: 47.57764, out: 14.037267, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -51
+  - position: 186720
+    duration: 480
+    tone: 67
+    lyric: мол
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 187200
+    duration: 1439
+    tone: 65
+    lyric: чим
+    pitch:
+      data:
+      - {x: -236.45833, y: 20, shape: io}
+      - {x: 40.000004, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 73.73176, period: 165, depth: 12.121201, in: 30.366493, out: 43.455498, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 67
+    - index: 1
+      offset: 43
+    - index: 2
+      offset: 6
+  - position: 190080
+    duration: 959
+    tone: 72
+    lyric: Смот
+    pitch:
+      data:
+      - {x: -80.208336, y: 0, shape: i}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 155.57454, depth: 13.636398, in: 54.921246, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 1
+    - index: 0
+      offset: -34
+      overlap_delta: 27.083334
+    - index: 1
+      offset: -34
+  - position: 191040
+    duration: 479
+    tone: 72
+    lyric: рят
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -45
+    - index: 1
+      offset: -3
+    - index: 2
+      offset: -18
+  - position: 191520
+    duration: 30
+    tone: 72
+    lyric: з
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      phoneme: s
+      offset: -108
+      overlap_delta: 13.541667
+  - position: 191550
+    duration: 450
+    tone: 72
+    lyric: вёз
+    pitch:
+      data:
+      - {x: -39.999996, y: 0, shape: io}
+      - {x: 12.5, y: 3.6363637, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: o
+      offset: -27
+    - index: 0
+      offset: -99
+      overlap_delta: 3.125
+    - index: 2
+      offset: 80
+  - position: 192000
+    duration: 480
+    tone: 70
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 192480
+    duration: 479
+    tone: 69
+    lyric: ды
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      phoneme: d
+      offset: -140
+      overlap_delta: 37.5
+    - index: 3
+      offset: -19
+    - index: 0
+      offset: 80
+  - position: 192960
+    duration: 1440
+    tone: 67
+    lyric: лет
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 80.97222, period: 165, depth: 20, in: 29.073757, out: 50.51458, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 208
+  - position: 194400
+    duration: 660
+    tone: 62
+    lyric: ни
+    pitch:
+      data:
+      - {x: -135.41667, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 160.41667, depth: 20, in: 53.613056, out: 9.09091, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 135
+    - index: 0
+      offset: 191
+  - position: 195360
+    duration: 479
+    tone: 64
+    lyric: е
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 195840
+    duration: 480
+    tone: 65
+    lyric: мол
+    pitch:
+      data:
+      - {x: -62.5, y: 0, shape: io}
+      - {x: 29.166666, y: 3.030303, shape: io}
+      - {x: 139.58333, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 227.08333, depth: 26.515198, in: 90.38461, out: 7.692308, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: o
+    - index: 0
+      offset: 236
+  - position: 196320
+    duration: 480
+    tone: 64
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 104.166664, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 13.636398, in: 25, out: 62.5, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 196800
+    duration: 480
+    tone: 65
+    lyric: ча
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 212
+  - position: 197280
+    duration: 480
+    tone: 67
+    lyric: на
+    pitch:
+      data:
+      - {x: -89.583336, y: -20, shape: io}
+      - {x: 1.0416666, y: 4.5454545, shape: io}
+      - {x: 61.458332, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 52.5, period: 155.20833, depth: 23.484802, in: 64.09575, out: 7.692308, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -67
+    - index: 2
+      offset: 168
+  - position: 197760
+    duration: 480
+    tone: 65
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 198240
+    duration: 480
+    tone: 67
+    lyric: пар
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: a
+      offset: 5
+    - index: 0
+      phoneme: b
+      offset: 127
+  - position: 198720
+    duration: 1440
+    tone: 69
+    lyric: ней
+    pitch:
+      data:
+      - {x: -220.83333, y: -20, shape: io}
+      - {x: -48.958332, y: -20.151516, shape: io}
+      - {x: 20.833334, y: 1.060606, shape: io}
+      - {x: 398.95834, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 85.55556, period: 239.71895, depth: 33.333206, in: 9.39793, out: 43.63676, shift: 41.41791, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 1
+  - position: 201600
+    duration: 959
+    tone: 65
+    lyric: И
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -171
+    - index: 0
+      offset: -55
+    - index: 2
+      offset: -69
+  - position: 202560
+    duration: 479
+    tone: 65
+    lyric: не
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 203040
+    duration: 480
+    tone: 65
+    lyric: ска
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: k
+      offset: -119
+    - index: 0
+      offset: -146
+  - position: 203520
+    duration: 479
+    tone: 67
+    lyric: +~
+    pitch:
+      data:
+      - {x: -116.666664, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 204000
+    duration: 479
+    tone: 69
+    lyric: жу
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 3
+      overlap_delta: 17.708334
+    - index: 0
+      offset: -48
+      overlap_delta: 94.791664
+  - position: 204480
+    duration: 1200
+    tone: 72
+    lyric: тя
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 76.25, period: 170.3125, depth: 30.303192, in: 75.25642, out: 13.9743595, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 103
+    - index: 1
+      phoneme: a
+  - position: 205920
+    duration: 600
+    tone: 70
+    lyric: сны
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 77.5, period: 165, depth: 32.575607, in: 31.362005, out: 37.813618, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 18
+    - index: 1
+      offset: -24
+  - position: 206880
+    duration: 479
+    tone: 69
+    lyric: е
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -17
+      overlap_delta: 5.2083335
+    - index: 1
+      offset: 14
+      overlap_delta: 3.125
+    - index: 2
+      offset: -105
+  - position: 207360
+    duration: 960
+    tone: 67
+    lyric: кто
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 13.636398, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 24
+    - index: 2
+      offset: 1
+    - index: 1
+      offset: -39
+  - position: 208320
+    duration: 479
+    tone: 64
+    lyric: из
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 23
+  - position: 208800
+    duration: 959
+    tone: 69
+    lyric: них
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.2732, period: 159.69681, depth: 16.666794, in: 43.09252, out: 32.31939, shift: 12.84404, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 77
+    - index: 0
+      offset: 84
+    - index: 1
+      offset: -19
+    - index: 3
+      offset: 63
+  - position: 209760
+    duration: 480
+    tone: 67
+    lyric: ми
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 76
+    - index: 1
+      offset: 19
+  - position: 210240
+    duration: 1440
+    tone: 62
+    lyric: лей
+    pitch:
+      data:
+      - {x: -182.29167, y: 50, shape: io}
+      - {x: 80.208336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 84.65278, period: 210.41667, depth: 40.151596, in: 74.89745, out: 10.0082035, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 27
+  - position: 213120
+    duration: 960
+    tone: 62
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -164
+  - position: 214080
+    duration: 479
+    tone: 74
+    lyric: ря
+    pitch:
+      data:
+      - {x: -96.875, y: -120, shape: io}
+      - {x: 114.583336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 214560
+    duration: 479
+    tone: 74
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 215040
+    duration: 479
+    tone: 72
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 215520
+    duration: 480
+    tone: 74
+    lyric: ку
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 216000
+    duration: 60
+    tone: 72
+    lyric: д
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 16.666666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -275
+  - position: 216060
+    duration: 1380
+    tone: 72
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 78.26087, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -132
+    - index: 1
+      offset: -36
+  - position: 217440
+    duration: 959
+    tone: 70
+    lyric: ва
+    pitch:
+      data:
+      - {x: -345.83334, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 218400
+    duration: 479
+    tone: 70
+    lyric: я
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 218880
+    duration: 960
+    tone: 70
+    lyric: бе
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 219840
+    duration: 480
+    tone: 72
+    lyric: лы
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 220320
+    duration: 480
+    tone: 74
+    lyric: е
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 220800
+    duration: 479
+    tone: 72
+    lyric: +~
+    pitch:
+      data:
+      - {x: -83.333336, y: 20, shape: io}
+      - {x: 84.375, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 221280
+    duration: 480
+    tone: 70
+    lyric: цве
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 51
+    - index: 1
+      offset: -19
+  - position: 221760
+    duration: 1680
+    tone: 69
+    lyric: ты
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 65.625, y: -0.15151516, shape: io}
+      - {x: 497.91666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 79.93056, period: 228.54607, depth: 33.333206, in: 49.733345, out: 0, shift: 31.645569, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 69
+  - position: 224640
+    duration: 959
+    tone: 65
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.48175, period: 165, depth: 20, in: 40.16228, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -239
+  - position: 225600
+    duration: 479
+    tone: 65
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 30
+  - position: 226080
+    duration: 480
+    tone: 65
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 226560
+    duration: 480
+    tone: 67
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 227040
+    duration: 480
+    tone: 69
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 227520
+    duration: 1440
+    tone: 72
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 87.708336, period: 165, depth: 34.090805, in: 55.898655, out: 38.558987, shift: 70.25317, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 228960
+    duration: 959
+    tone: 70
+    lyric: ну
+    pitch:
+      data:
+      - {x: -292.70834, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 29.545593, in: 59.73395, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 229920
+    duration: 479
+    tone: 69
+    lyric: шка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -2
+    - index: 0
+      offset: -117
+    - index: 1
+      offset: -84
+  - position: 230400
+    duration: 960
+    tone: 67
+    lyric: что
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 86.770836, period: 165, depth: 33.333206, in: 20.768305, out: 65.306114, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -77
+    - index: 0
+      offset: -19
+  - position: 231360
+    duration: 15
+    tone: 64
+    lyric: в
+    pitch:
+      data:
+      - {x: -514.5833, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -343
+  - position: 231375
+    duration: 15
+    tone: 64
+    lyric: з
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -296
+  - position: 231390
+    duration: 405
+    tone: 64
+    lyric: гру
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -24
+    - index: 0
+      offset: -230
+    - index: 1
+      offset: -136
+  - position: 231795
+    duration: 15
+    tone: 64
+    lyric: с
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -175
+  - position: 231810
+    duration: 15
+    tone: 64
+    lyric: т
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -125
+  - position: 231840
+    duration: 960
+    tone: 69
+    lyric: ну
+    pitch:
+      data:
+      - {x: -11.458333, y: 0, shape: i}
+      - {x: 40, y: 0, shape: io}
+      snap_first: false
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 228
+    - index: 1
+      offset: 10
+  - position: 232800
+    duration: 480
+    tone: 67
+    lyric: ла
+    pitch:
+      data:
+      - {x: -226.04167, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 233280
+    duration: 1680
+    tone: 62
+    lyric: ты
+    pitch:
+      data:
+      - {x: -108.333336, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 85.416664, period: 234.375, depth: 27.272797, in: 49.686413, out: 0, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 117
+  - position: 239040
+    duration: 960
+    tone: 62
+    lyric: Кто
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 35.416668, y: 0.6060606, shape: io}
+      - {x: 238.54167, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 86.458336, period: 165, depth: 19.696999, in: 47.94872, out: 21.282051, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 36
+    - index: 0
+      offset: 67
+    - index: 1
+      offset: -68
+  - position: 240000
+    duration: 480
+    tone: 62
+    lyric: из
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 89
+    - index: 0
+      offset: 80
+    - index: 1
+      offset: 148
+  - position: 240480
+    duration: 720
+    tone: 65
+    lyric: них
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 87.5, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 73
+    - index: 1
+      offset: 84
+    - index: 2
+      offset: 248
+  - position: 241440
+    duration: 480
+    tone: 62
+    lyric: же
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 58
+  - position: 241920
+    duration: 1320
+    tone: 67
+    lyric: лан
+    pitch:
+      data:
+      - {x: -218.75, y: -50, shape: io}
+      - {x: 40.00001, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.89474, period: 165, depth: 21.212006, in: 68.081955, out: 6.7857137, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 73
+    - index: 2
+      offset: 92
+  - position: 243360
+    duration: 720
+    tone: 62
+    lyric: не
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 244320
+    duration: 480
+    tone: 64
+    lyric: е
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 102
+  - position: 244800
+    duration: 960
+    tone: 65
+    lyric: ру
+    pitch:
+      data:
+      - {x: -75, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 3
+      offset: -41
+    - index: 2
+      offset: -28
+  - position: 245760
+    duration: 479
+    tone: 64
+    lyric: ку
+    pitch:
+      data:
+      - {x: -54.166668, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 3
+      offset: -67
+    - index: 1
+      offset: 38
+    - index: 0
+      offset: 92
+  - position: 246240
+    duration: 959
+    tone: 69
+    lyric: сжать
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 41.666794, in: 75.133354, out: 0.6416941, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 30
+    - index: 2
+      offset: -6
+    - index: 1
+      phoneme: a
+  - position: 247200
+    duration: 480
+    tone: 67
+    lyric: ко
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 111
+    - index: 1
+      phoneme: a
+  - position: 247680
+    duration: 1680
+    tone: 62
+    lyric: му
+    pitch:
+      data:
+      - {x: -190.625, y: 50, shape: io}
+      - {x: 39.999996, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 76.13095, period: 165, depth: 31.0606, in: 53.08835, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 18
+    - index: 2
+      offset: -238
+    - index: 0
+      offset: -6
+  - position: 250560
+    duration: 960
+    tone: 62
+    lyric: Серд
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 74.76538, period: 165, depth: 28.787804, in: 64.85355, out: 0, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 313
+    - index: 3
+      offset: 333
+    - index: 1
+      phoneme: e
+  - position: 251520
+    duration: 479
+    tone: 69
+    lyric: цем
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 103.125, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 177
+    - index: 1
+      phoneme: e
+      offset: 5
+    - index: 2
+      offset: -51
+  - position: 252000
+    duration: 959
+    tone: 69
+    lyric: рас
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: a
+    - index: 2
+      offset: -196
+    - index: 0
+      offset: 72
+  - position: 252960
+    duration: 479
+    tone: 65
+    lyric: тре
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -85
+    - index: 1
+      offset: -7
+    - index: 2
+      offset: 25
+  - position: 253440
+    duration: 1440
+    tone: 67
+    lyric: во
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 76.111115, period: 165, depth: 31.060791, in: 46.259125, out: 36.538464, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 111
+    - index: 1
+      offset: 17
+  - position: 254880
+    duration: 60
+    tone: 62
+    lyric: ж
+    pitch:
+      data:
+      - {x: -40, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -28
+  - position: 254940
+    duration: 660
+    tone: 62
+    lyric: ен
+    pitch:
+      data:
+      - {x: -21.875, y: 0, shape: io}
+      - {x: 198.95833, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 152.08333, depth: 42.424202, in: 42.307697, out: 5.7692313, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 36
+    - index: 1
+      phoneme: e
+      offset: 72
+    - index: 2
+      offset: -46
+  - position: 255840
+    duration: 479
+    tone: 64
+    lyric: ным
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 9
+    - index: 0
+      offset: 29
+  - position: 256320
+    duration: 480
+    tone: 65
+    lyric: та
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 74.791664, period: 165, depth: 31.8182, in: 48.746517, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 161
+    - index: 1
+      offset: 12
+    - index: 3
+      offset: 91
+  - position: 256800
+    duration: 479
+    tone: 64
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 263.54166, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 257280
+    duration: 480
+    tone: 65
+    lyric: ки
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      phoneme: g
+      offset: 32
+    - index: 1
+      phoneme: i
+  - position: 257760
+    duration: 959
+    tone: 69
+    lyric: не
+    pitch:
+      data:
+      - {x: -201.04167, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 83.941605, period: 165, depth: 28.787994, in: 47.57764, out: 14.037267, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -51
+  - position: 258720
+    duration: 480
+    tone: 67
+    lyric: пой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -89
+  - position: 259200
+    duration: 1439
+    tone: 65
+    lyric: му
+    pitch:
+      data:
+      - {x: -236.45833, y: 20, shape: io}
+      - {x: 40.000004, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 92.49479, period: 165, depth: 43.1818, in: 30.366493, out: 63.711494, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 24
+    - index: 1
+      offset: 43
+    - index: 2
+      offset: 6
+  - position: 262080
+    duration: 959
+    tone: 72
+    lyric: О
+    pitch:
+      data:
+      - {x: -1.0416666, y: 0, shape: i}
+      - {x: 15.625, y: 2.7272727, shape: io}
+      - {x: 183.33333, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75.18248, period: 155.57454, depth: 31.818008, in: 54.921246, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 1
+    - index: 0
+      offset: -16
+      overlap_delta: 27.083334
+    - index: 1
+      offset: -34
+  - position: 263040
+    duration: 479
+    tone: 72
+    lyric: ба
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -45
+    - index: 1
+      offset: -3
+    - index: 2
+      offset: -18
+  - position: 263520
+    duration: 480
+    tone: 72
+    lyric: пар
+    pitch:
+      data:
+      - {x: -196.875, y: 0, shape: io}
+      - {x: -122.916664, y: 5.909091, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: a
+      offset: -27
+    - index: 0
+      offset: 46
+      overlap_delta: 3.125
+    - index: 2
+      offset: 80
+  - position: 264000
+    duration: 480
+    tone: 70
+    lyric: +~
+    pitch:
+      data:
+      - {x: -108.333336, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 264480
+    duration: 479
+    tone: 69
+    lyric: ня
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      phoneme: d
+      offset: -140
+      overlap_delta: 37.5
+    - index: 3
+      offset: -19
+    - index: 0
+      offset: 80
+  - position: 264960
+    duration: 1440
+    tone: 67
+    lyric: сме
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 80.97222, period: 165, depth: 20, in: 29.073757, out: 50.51458, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 144
+    - index: 1
+      offset: -28
+  - position: 266400
+    duration: 660
+    tone: 62
+    lyric: лы
+    pitch:
+      data:
+      - {x: -204.16667, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 160.41667, depth: 20, in: 53.613056, out: 9.09091, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 135
+    - index: 0
+      offset: 120
+  - position: 267360
+    duration: 480
+    tone: 64
+    lyric: е
+    pitch:
+      data:
+      - {x: -104.166664, y: 0, shape: io}
+      - {x: -34.375, y: -4.242424, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 217
+  - position: 267840
+    duration: 480
+    tone: 65
+    lyric: о
+    pitch:
+      data:
+      - {x: -62.5, y: -10, shape: io}
+      - {x: 29.166666, y: 3.030303, shape: io}
+      - {x: 139.58333, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 227.08333, depth: 8.333397, in: 70.83333, out: 6.0897446, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: o
+    - index: 0
+      offset: -69
+  - position: 268320
+    duration: 480
+    tone: 64
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 104.166664, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 13.636398, in: 25, out: 62.5, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 268800
+    duration: 480
+    tone: 65
+    lyric: ба
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 111
+  - position: 269280
+    duration: 480
+    tone: 67
+    lyric: хо
+    pitch:
+      data:
+      - {x: -89.583336, y: -20, shape: io}
+      - {x: 1.0416666, y: 4.5454545, shape: io}
+      - {x: 61.458332, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 52.5, period: 155.20833, depth: 23.484802, in: 64.09575, out: 7.692308, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -18
+    - index: 2
+      offset: 168
+    - index: 1
+      phoneme: a
+  - position: 269760
+    duration: 480
+    tone: 65
+    lyric: +~
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 270240
+    duration: 480
+    tone: 67
+    lyric: ро
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: a
+      offset: 6
+    - index: 0
+      phoneme: r
+      offset: -36
+  - position: 270720
+    duration: 1440
+    tone: 69
+    lyric: ши
+    pitch:
+      data:
+      - {x: -220.83333, y: -20, shape: io}
+      - {x: -48.958332, y: -20.151516, shape: io}
+      - {x: 20.833334, y: 1.060606, shape: io}
+      - {x: 398.95834, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 85.55556, period: 239.71895, depth: 33.333206, in: 9.39793, out: 61.12013, shift: 41.41791, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 1
+    - index: 0
+      offset: 71
+  - position: 273600
+    duration: 870
+    tone: 65
+    lyric: Ми
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -5
+    - index: 0
+      offset: 80
+    - index: 2
+      offset: -69
+  - position: 274560
+    duration: 479
+    tone: 65
+    lyric: ла
+    pitch:
+      data:
+      - {x: -1.0416666, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -7
+  - position: 275040
+    duration: 480
+    tone: 65
+    lyric: я
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 0, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: a
+      offset: -119
+    - index: 0
+      offset: -146
+  - position: 275520
+    duration: 479
+    tone: 67
+    lyric: +~
+    pitch:
+      data:
+      - {x: -116.666664, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 86.63883, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 276000
+    duration: 479
+    tone: 69
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 3
+      overlap_delta: 17.708334
+    - index: 0
+      offset: -48
+      overlap_delta: 94.791664
+  - position: 276480
+    duration: 1200
+    tone: 72
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 76.25, period: 170.3125, depth: 30.303192, in: 75.25642, out: 13.9743595, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 103
+    - index: 1
+      phoneme: i
+  - position: 277920
+    duration: 600
+    tone: 70
+    lyric: ну
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 77.5, period: 165, depth: 32.575607, in: 31.362005, out: 37.813618, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 18
+    - index: 1
+      offset: -24
+  - position: 278880
+    duration: 479
+    tone: 69
+    lyric: шка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -32
+      overlap_delta: 5.2083335
+    - index: 1
+      offset: -57
+      overlap_delta: 3.125
+    - index: 2
+      offset: 1
+  - position: 279360
+    duration: 960
+    tone: 67
+    lyric: серд
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 89.895836, period: 165, depth: 37.1212, in: 17.154812, out: 75.202774, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -41
+    - index: 2
+      offset: 167
+      overlap_delta: 36.458332
+    - index: 1
+      phoneme: e
+      offset: -6
+    - index: 3
+      offset: 204
+  - position: 280320
+    duration: 479
+    tone: 64
+    lyric: цу
+    pitch:
+      data:
+      - {x: -388.54166, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 136
+  - position: 280800
+    duration: 959
+    tone: 69
+    lyric: под
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.2732, period: 159.69681, depth: 16.666794, in: 43.09252, out: 32.31939, shift: 12.84404, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 77
+    - index: 0
+      offset: 84
+    - index: 1
+      offset: -19
+    - index: 3
+      offset: 63
+  - position: 281760
+    duration: 480
+    tone: 67
+    lyric: ска
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 76
+    - index: 1
+      offset: -37
+  - position: 282240
+    duration: 1440
+    tone: 62
+    lyric: жи
+    pitch:
+      data:
+      - {x: -167.70833, y: 50, shape: io}
+      - {x: 80.208336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 84.65278, period: 210.41667, depth: 40.151596, in: 74.89745, out: 10.0082035, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 27
+  - position: 285120
+    duration: 960
+    tone: 62
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -164
+  - position: 286080
+    duration: 479
+    tone: 74
+    lyric: ря
+    pitch:
+      data:
+      - {x: -96.875, y: -120, shape: io}
+      - {x: 114.583336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 286560
+    duration: 479
+    tone: 74
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 287040
+    duration: 480
+    tone: 72
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 180
+      overlap_delta: 17.708334
+  - position: 287520
+    duration: 480
+    tone: 74
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -62
+  - position: 288000
+    duration: 1440
+    tone: 72
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 81.80556, period: 165, depth: 39.393997, in: 16.94553, out: 42.237656, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -132
+    - index: 1
+      offset: -36
+  - position: 289440
+    duration: 959
+    tone: 70
+    lyric: ну
+    pitch:
+      data:
+      - {x: -226.04167, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 79.14494, period: 165, depth: 20, in: 25, out: 48.768753, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 290400
+    duration: 480
+    tone: 70
+    lyric: шка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -1
+    - index: 2
+      offset: -3
+    - index: 1
+      offset: -78
+  - position: 290880
+    duration: 960
+    tone: 70
+    lyric: о
+    pitch:
+      data:
+      - {x: -29.166666, y: 0, shape: io}
+      - {x: 0, y: 3.7878788, shape: io}
+      - {x: 111.458336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 71.25, period: 165, depth: 28.787994, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 291840
+    duration: 480
+    tone: 72
+    lyric: ба
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 126
+  - position: 292320
+    duration: 480
+    tone: 74
+    lyric: хо
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 67
+    - index: 1
+      phoneme: a
+  - position: 292800
+    duration: 479
+    tone: 72
+    lyric: +~
+    pitch:
+      data:
+      - {x: -83.333336, y: 20, shape: io}
+      - {x: 84.375, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 293280
+    duration: 480
+    tone: 70
+    lyric: ро
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 51
+    - index: 1
+      phoneme: a
+      offset: -19
+    - index: 0
+      offset: 105
+  - position: 293760
+    duration: 1680
+    tone: 69
+    lyric: ши
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 65.625, y: -0.15151516, shape: io}
+      - {x: 497.91666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 79.93056, period: 228.54607, depth: 33.333206, in: 49.733345, out: 0, shift: 31.645569, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 69
+  - position: 296640
+    duration: 959
+    tone: 65
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.48175, period: 165, depth: 20, in: 40.16228, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -239
+  - position: 297600
+    duration: 479
+    tone: 65
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 30
+  - position: 298080
+    duration: 480
+    tone: 65
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 197
+  - position: 298560
+    duration: 480
+    tone: 67
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 299040
+    duration: 480
+    tone: 69
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 299520
+    duration: 1440
+    tone: 72
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 87.708336, period: 165, depth: 34.090805, in: 55.898655, out: 38.558987, shift: 70.25317, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 300960
+    duration: 959
+    tone: 70
+    lyric: ну
+    pitch:
+      data:
+      - {x: -292.70834, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 29.545593, in: 59.73395, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 301920
+    duration: 479
+    tone: 69
+    lyric: шка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -2
+    - index: 0
+      offset: -117
+    - index: 1
+      offset: -84
+  - position: 302400
+    duration: 960
+    tone: 67
+    lyric: серд
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 86.770836, period: 165, depth: 33.333206, in: 20.768305, out: 65.306114, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      phoneme: e
+      offset: 2
+    - index: 0
+      offset: -19
+    - index: 2
+      offset: 96
+    - index: 3
+      offset: 202
+  - position: 303360
+    duration: 450
+    tone: 64
+    lyric: цу
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -24
+    - index: 0
+      offset: 155
+    - index: 1
+      offset: -1
+  - position: 303840
+    duration: 960
+    tone: 69
+    lyric: под
+    pitch:
+      data:
+      - {x: -11.458333, y: 0, shape: i}
+      - {x: 40, y: 0, shape: io}
+      snap_first: false
+    vibrato: {length: 83.645836, period: 165, depth: 34.848404, in: 25, out: 48.069733, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 228
+    - index: 1
+      phoneme: o
+      offset: 10
+    - index: 2
+      offset: 49
+  - position: 304800
+    duration: 480
+    tone: 67
+    lyric: ска
+    pitch:
+      data:
+      - {x: -226.04167, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 64
+  - position: 305280
+    duration: 1680
+    tone: 62
+    lyric: жи
+    pitch:
+      data:
+      - {x: -108.333336, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 85.416664, period: 234.375, depth: 27.272797, in: 49.686413, out: 0, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -29
+  - position: 308160
+    duration: 960
+    tone: 62
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -164
+  - position: 309120
+    duration: 479
+    tone: 74
+    lyric: ря
+    pitch:
+      data:
+      - {x: -96.875, y: -120, shape: io}
+      - {x: 114.583336, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 309600
+    duration: 479
+    tone: 74
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 310080
+    duration: 479
+    tone: 72
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 310560
+    duration: 480
+    tone: 74
+    lyric: ку
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 311040
+    duration: 60
+    tone: 72
+    lyric: д
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 16.666666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -275
+  - position: 311100
+    duration: 1380
+    tone: 72
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 78.26087, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -132
+    - index: 1
+      offset: -36
+  - position: 312480
+    duration: 959
+    tone: 70
+    lyric: ва
+    pitch:
+      data:
+      - {x: -345.83334, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 313440
+    duration: 479
+    tone: 70
+    lyric: я
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 313920
+    duration: 960
+    tone: 70
+    lyric: бе
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 314880
+    duration: 480
+    tone: 72
+    lyric: лы
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 315360
+    duration: 480
+    tone: 74
+    lyric: е
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 315840
+    duration: 479
+    tone: 72
+    lyric: +~
+    pitch:
+      data:
+      - {x: -83.333336, y: 20, shape: io}
+      - {x: 84.375, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 316320
+    duration: 480
+    tone: 70
+    lyric: цве
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: 51
+    - index: 1
+      offset: -19
+  - position: 316800
+    duration: 1680
+    tone: 69
+    lyric: ты
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 65.625, y: -0.15151516, shape: io}
+      - {x: 497.91666, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 79.93056, period: 228.54607, depth: 33.333206, in: 49.733345, out: 0, shift: 31.645569, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 69
+  - position: 319680
+    duration: 959
+    tone: 65
+    lyric: Ой
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 82.48175, period: 165, depth: 20, in: 40.16228, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -239
+  - position: 320640
+    duration: 479
+    tone: 65
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: 30
+  - position: 321120
+    duration: 480
+    tone: 65
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 187
+  - position: 321600
+    duration: 480
+    tone: 67
+    lyric: на
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 322080
+    duration: 480
+    tone: 69
+    lyric: ря
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 322560
+    duration: 1440
+    tone: 72
+    lyric: би
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 87.708336, period: 165, depth: 34.090805, in: 55.898655, out: 38.558987, shift: 70.25317, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 324000
+    duration: 959
+    tone: 70
+    lyric: ну
+    pitch:
+      data:
+      - {x: -292.70834, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 65, period: 165, depth: 29.545593, in: 59.73395, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 324960
+    duration: 479
+    tone: 69
+    lyric: шка
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -2
+    - index: 0
+      offset: -117
+    - index: 1
+      offset: -84
+  - position: 325440
+    duration: 960
+    tone: 67
+    lyric: что
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 86.770836, period: 165, depth: 33.333206, in: 20.768305, out: 65.306114, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 1
+      offset: -77
+    - index: 0
+      offset: -19
+  - position: 326400
+    duration: 15
+    tone: 64
+    lyric: в
+    pitch:
+      data:
+      - {x: -514.5833, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -343
+  - position: 326415
+    duration: 15
+    tone: 64
+    lyric: з
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -296
+  - position: 326430
+    duration: 405
+    tone: 64
+    lyric: гру
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 2
+      offset: -24
+    - index: 0
+      offset: -230
+    - index: 1
+      offset: -136
+  - position: 326835
+    duration: 15
+    tone: 64
+    lyric: с
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -175
+  - position: 326850
+    duration: 15
+    tone: 64
+    lyric: т
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: -125
+  - position: 326880
+    duration: 960
+    tone: 69
+    lyric: ну
+    pitch:
+      data:
+      - {x: -11.458333, y: 0, shape: i}
+      - {x: 40, y: 0, shape: io}
+      snap_first: false
+    vibrato: {length: 65, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 228
+      overlap_delta: 32.291668
+    - index: 1
+      offset: 10
+  - position: 327840
+    duration: 480
+    tone: 67
+    lyric: ла
+    pitch:
+      data:
+      - {x: -226.04167, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 165, depth: 20, in: 25, out: 25, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 328320
+    duration: 2640
+    tone: 62
+    lyric: ты
+    pitch:
+      data:
+      - {x: -230.20833, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 85.416664, period: 234.375, depth: 27.272797, in: 39.290466, out: 32.594234, shift: 100, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides:
+    - index: 0
+      offset: 81
+  curves:
+  - xs: []
+    ys: []
+    abbr: pitd
+wave_parts: []
