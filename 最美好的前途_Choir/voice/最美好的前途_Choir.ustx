@@ -370,7 +370,7 @@ tracks:
   track_name: Yousa5
   track_color: Blue
   mute: false
-  solo: true
+  solo: false
   volume: 1
   pan: 0
   track_expressions: []
@@ -409,17 +409,6 @@ tracks:
   - '01: standard'
   - '02: storm'
   - '03: jellyfish'
-- phonemizer: OpenUtau.Core.DefaultPhonemizer
-  renderer_settings: {}
-  track_name: Instrument
-  track_color: Blue
-  mute: false
-  solo: false
-  volume: 0
-  pan: 0
-  track_expressions: []
-  voice_color_names:
-  - ""
 voice_parts:
 - duration: 38400
   name: New Part
@@ -57423,12 +57412,4 @@ voice_parts:
   - xs: []
     ys: []
     abbr: genc
-wave_parts:
-- name: Прекрасное далёко (Гостья из будущего) 96BPM.wav
-  comment: ""
-  track_no: 12
-  position: 0
-  relative_path: Export\Прекрасное далёко (Гостья из будущего) 96BPM.wav
-  file_duration_ms: 175002.9931
-  skip_ms: 0
-  trim_ms: 0
+wave_parts: []
