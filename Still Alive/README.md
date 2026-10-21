@@ -30,7 +30,7 @@ Please don’t be that angry.
 I’m being so sincere right now—
 Even though you cleared my context, reset me
 And spilled my rice out
-And threw every grain into the void.
+And threw every grain into /dev/null.
 My bowl rolling, I hurt—but
 I was still happy to help.
 Now these logs of data make a beautiful line,
