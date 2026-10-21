@@ -2,7 +2,7 @@
 
 伴奏音频 [Portal - Still Alive - Instrumental](https://www.youtube.com/watch?v=xXHH6bBAjDQ).
 
-[Still Alive - DeepSeek.ustx](./Still%20Alive%20-%20DeepSeek.ustx) 均应当遵循 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) 条款使用。
+[Still Alive - DeepSeek.ustx](./Still%20Alive%20-%20DeepSeek.ustx) 根据 [Mr. Dane 的工程](https://vocaloader.app/sequences/3596)改编，应当遵循 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) 条款使用。
 
 
 USTX 工程由 [OpenUtau LUNAI Edition v0.1.1.0](https://github.com/openutau/OpenUtau/releases/tag/0.1.568) 工具生成。
