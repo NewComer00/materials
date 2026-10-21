@@ -1,4 +1,4 @@
-﻿name: StillAliveSVP
+name: StillAliveSVP
 comment: ""
 output_dir: Vocal
 cache_dir: UCache
@@ -1526,7 +1526,7 @@ voice_parts:
     - index: 1
       offset: 379
     - index: 2
-      offset: 77
+      offset: 122
   - position: 42120
     duration: 240
     tone: 69
@@ -2442,7 +2442,7 @@ voice_parts:
   - position: 76440
     duration: 240
     tone: 64
-    lyric: the
+    lyric: dev
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -2450,11 +2450,17 @@ voice_parts:
       snap_first: true
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
-    phoneme_overrides: []
+    phoneme_overrides:
+    - index: 1
+      offset: -100
+    - index: 0
+      offset: -68
+    - index: 2
+      offset: -47
   - position: 76680
     duration: 240
     tone: 57
-    lyric: void
+    lyric: "null"
     pitch:
       data:
       - {x: -40, y: 70, shape: io}
@@ -2464,9 +2470,11 @@ voice_parts:
     phoneme_expressions: []
     phoneme_overrides:
     - index: 2
-      offset: 66
+      offset: 4
     - index: 0
-      offset: 37
+      offset: -76
+    - index: 1
+      offset: -94
   - position: 78840
     duration: 480
     tone: 64
@@ -6058,7 +6066,7 @@ voice_parts:
   - position: 76440
     duration: 240
     tone: 67
-    lyric: the
+    lyric: dev
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -6066,11 +6074,17 @@ voice_parts:
       snap_first: true
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
-    phoneme_overrides: []
+    phoneme_overrides:
+    - index: 1
+      offset: -100
+    - index: 0
+      offset: -68
+    - index: 2
+      offset: -47
   - position: 76680
     duration: 240
     tone: 57
-    lyric: void
+    lyric: "null"
     pitch:
       data:
       - {x: -40, y: 100, shape: io}
@@ -6080,9 +6094,11 @@ voice_parts:
     phoneme_expressions: []
     phoneme_overrides:
     - index: 2
-      offset: 66
+      offset: 4
     - index: 0
-      offset: 37
+      offset: -76
+    - index: 1
+      offset: -94
   - position: 120120
     duration: 240
     tone: 71
